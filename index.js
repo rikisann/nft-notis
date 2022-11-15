@@ -1,6 +1,6 @@
 import * as lib from "./lib/lib.js";
-import * as helpers from "./helpers/helpers.js";
 import wantedTraits from "./traits.js";
+import * as helpers from "./helpers/helpers.js";
 
 let latestSlot = await helpers.getLatestSlot();
 
