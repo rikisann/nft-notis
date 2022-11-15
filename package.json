@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "build": "npm install && node node_modules/puppeteer/install.js"
+    "build": "npm install && node ./node_modules/puppeteer/install.js"
   },
   "keywords": [],
   "author": "",
