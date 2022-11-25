@@ -5,17 +5,25 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "build": "npm install"
+    "start": "node dist/index.js",
+    "build": "npm install",
+    "build-ts": "tsc -p .",
+    "dev": "nodemon src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@solana/web3.js": "^1.66.2",
-    "@sparticuz/chromium": "^108.0.1",
+    "dotenv": "^16.0.3",
+    "hyperspace-client-js": "^1.4.10",
+    "mongoose": "^6.7.2",
     "node-fetch": "^3.3.0",
-    "nodemailer": "^6.8.0",
-    "puppeteer-core": "^19.2.2"
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.6",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.3"
   }
 }
